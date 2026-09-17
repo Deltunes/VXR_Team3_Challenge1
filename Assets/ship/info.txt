@@ -1,0 +1,28 @@
+Space Ship
+
+Verts: 3069
+
+Edges: 6311
+
+Faces: 3300
+
+Tris: 6014
+
+UVs: 6177
+
+-if you want to create your own texture,low poly and high poly 2 models are also available
+
+-Texture 4K
+
+formats: 
+
+-FBX
+
+-MAYA 2018
+
+-OBJ
+
+Otliner regular
+
+loaded as winrar
+

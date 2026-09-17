@@ -1,0 +1,1 @@
+After loading the textures on the left side, do duplicate special or mirror on the right side.
