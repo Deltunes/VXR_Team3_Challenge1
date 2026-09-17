@@ -159,16 +159,28 @@ PrefabInstance:
       value: SpaceShuttle_01
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.93940926
+      value: 6.61
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.31
+      value: 24.67
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -105.681
+      value: -109.76
       objectReference: {fileID: 0}
     - target: {fileID: 486654, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -240,7 +252,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2163,27 +2175,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9305897
+      value: -19.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79
+      value: 27.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -102.701004
+      value: -102.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3795,12 +3807,24 @@ PrefabInstance:
       value: ShipType2
       objectReference: {fileID: 0}
     - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.39941
+      value: -6.45
       objectReference: {fileID: 0}
     - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0441116
+      value: 34.4
       objectReference: {fileID: 0}
     - target: {fileID: 8913791331938724223, guid: 35c8ebb375069404f817c58ea64be3ff, type: 3}
       propertyPath: m_LocalPosition.z
