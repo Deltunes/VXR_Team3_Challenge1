@@ -301,7 +301,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357552, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d6b67594f40ca154d891e20c1e191523, type: 2}
     m_RemovedComponents: []
@@ -448,7 +448,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357552, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3dfde66c6eebc0e4db3de48ccee0d9d8, type: 2}
     m_RemovedComponents: []
@@ -942,7 +942,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357552, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 603e83ec9cfb1bf4fb2b09ff5ca1c027, type: 2}
     m_RemovedComponents: []
@@ -1086,6 +1086,7 @@ GameObject:
   - component: {fileID: 584959217}
   - component: {fileID: 584959219}
   - component: {fileID: 584959218}
+  - component: {fileID: 584959220}
   m_Layer: 0
   m_Name: streetLight(2)
   m_TagString: Untagged
@@ -1165,6 +1166,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584959216}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &584959220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584959216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064378977, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &587170780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mediator: {fileID: 2109135771}
   m_TransformationPriority: 0
-  m_MoveSpeed: 2.5
+  m_MoveSpeed: 1
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -1425,7 +1447,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357552, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3dfde66c6eebc0e4db3de48ccee0d9d8, type: 2}
     m_RemovedComponents: []
@@ -1663,6 +1685,7 @@ GameObject:
   - component: {fileID: 792693931}
   - component: {fileID: 792693933}
   - component: {fileID: 792693932}
+  - component: {fileID: 792693934}
   m_Layer: 0
   m_Name: streetLight(4)
   m_TagString: Untagged
@@ -1742,6 +1765,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792693930}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &792693934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792693930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064498186, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &796783935 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 95520881257408777, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
@@ -1945,6 +1989,7 @@ GameObject:
   - component: {fileID: 871921824}
   - component: {fileID: 871921826}
   - component: {fileID: 871921825}
+  - component: {fileID: 871921827}
   m_Layer: 0
   m_Name: streetLight(3)
   m_TagString: Untagged
@@ -2024,6 +2069,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871921823}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &871921827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871921823}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064378977, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &915402975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6754674874353905211, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
@@ -2061,6 +2127,7 @@ GameObject:
   - component: {fileID: 928568694}
   - component: {fileID: 928568696}
   - component: {fileID: 928568695}
+  - component: {fileID: 928568697}
   m_Layer: 0
   m_Name: streetLight(5)
   m_TagString: Untagged
@@ -2140,6 +2207,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928568693}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &928568697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928568693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064378977, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &1014430807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2426,7 @@ GameObject:
   - component: {fileID: 1171370434}
   - component: {fileID: 1171370436}
   - component: {fileID: 1171370435}
+  - component: {fileID: 1171370437}
   m_Layer: 0
   m_Name: streetLight(7)
   m_TagString: Untagged
@@ -2417,6 +2506,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171370433}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &1171370437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171370433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064378977, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &1203391112
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,6 +5241,7 @@ GameObject:
   - component: {fileID: 1320742150}
   - component: {fileID: 1320742152}
   - component: {fileID: 1320742151}
+  - component: {fileID: 1320742153}
   m_Layer: 0
   m_Name: streetLight(6)
   m_TagString: Untagged
@@ -5210,6 +5321,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320742149}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &1320742153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320742149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064474344, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &1327188341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
@@ -5462,23 +5594,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6852061854329938589, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     - target: {fileID: -5766963980030004559, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8f0b3e4bd29613f41897bd50e6b961d8, type: 2}
     - target: {fileID: -4019794287034749309, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     - target: {fileID: -170262974546074008, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8f0b3e4bd29613f41897bd50e6b961d8, type: 2}
     - target: {fileID: 808085201590192294, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     - target: {fileID: 919132149155446097, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
@@ -5486,19 +5618,19 @@ PrefabInstance:
       value: ship FBX
       objectReference: {fileID: 0}
     - target: {fileID: 1344290732465507294, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     - target: {fileID: 1412850606755242841, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8f0b3e4bd29613f41897bd50e6b961d8, type: 2}
     - target: {fileID: 1853928166756919290, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     - target: {fileID: 7930330785103621762, guid: 321868f4cd2b76148873235e5b2f6d13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 48e70480785bf614f80f10b4b7e12f30, type: 2}
     m_RemovedComponents: []
@@ -5585,7 +5717,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357552, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 196f791ddbbd68e4cb33c0d673942fe5, type: 2}
     m_RemovedComponents: []
@@ -6110,9 +6242,25 @@ PrefabInstance:
       value: truckstop5
       objectReference: {fileID: 0}
     - target: {fileID: 3954546073307237752, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8d02196645aa3c84aa26cdcda6457192, type: 2}
+    - target: {fileID: 4010445782307178608, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010445782307178608, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010445782307178608, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010445782307178608, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4010445782307178608, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -89.98021
@@ -6235,6 +6383,7 @@ GameObject:
   - component: {fileID: 1555681660}
   - component: {fileID: 1555681662}
   - component: {fileID: 1555681661}
+  - component: {fileID: 1555681663}
   m_Layer: 0
   m_Name: streetLight
   m_TagString: Untagged
@@ -6314,6 +6463,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555681659}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &1555681663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555681659}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.00064474344, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &1567528902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,6 +7489,7 @@ GameObject:
   - component: {fileID: 2012565007}
   - component: {fileID: 2012565009}
   - component: {fileID: 2012565008}
+  - component: {fileID: 2012565010}
   m_Layer: 0
   m_Name: streetLight(1)
   m_TagString: Untagged
@@ -7398,6 +7569,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012565006}
   m_Mesh: {fileID: 4300016, guid: 72c93e4f187cc614291429b3f1d40f35, type: 3}
+--- !u!65 &2012565010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012565006}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 3.792322, z: 0.4}
+  m_Center: {x: 0.0006428361, y: 1.8927089, z: 0.0010237694}
 --- !u!1 &2037804391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6278908460085183653, guid: 4778f6e77fe28834cb2ab2cd883ef486, type: 3}
