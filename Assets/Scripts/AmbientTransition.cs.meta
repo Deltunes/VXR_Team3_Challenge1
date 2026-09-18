@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: dadbca1b3d334fb43861e524d3438bc6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - indoorSnapshot: {fileID: -5096837689947846907, guid: 5193b1f1d9f96e6488e5c4cb4f401f9c, type: 2}
+  - outdoorSnapshot: {fileID: 507738748448417336, guid: 5193b1f1d9f96e6488e5c4cb4f401f9c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
