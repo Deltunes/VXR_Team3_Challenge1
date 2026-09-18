@@ -3,15 +3,25 @@ using UnityEngine.Audio;
 
 public class AmbientTransition : MonoBehaviour
 {
-    public AudioMixerSnapshot snapshot;
+    public AudioMixerSnapshot indoorSnapshot;
+    public AudioMixerSnapshot outdoorSnapshot;
     public float transitionTime = 1.5f;
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Stepping outside
+            outdoorSnapshot.TransitionTo(transitionTime);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             // Stepping inside
-            snapshot.TransitionTo(transitionTime);
+            indoorSnapshot.TransitionTo(transitionTime);
         }
     }
 }
