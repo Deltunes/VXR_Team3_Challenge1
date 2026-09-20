@@ -30,22 +30,27 @@ public class ConversationScript : MonoBehaviour
             StartDialogueTree();
             PlayerUnseen = false;
         }
+        if (interrupted == true && PlayerPresent == true)
+        {
+            ResumeDialogueTree();
+        }
     }
 
     private void StartDialogueTree ()
     {
         //play audio to get player's attention, preferably sourced from the alien
 
-
+        //Send a ping to another script to get it to start the dialogue
     }
 
     private void InterruptDialogueTree()
     {
-
+        //Send a ping to another script to get it to stop the current dialogue (and save where it was) 
+        //Send a ping to another script to tell it to play a short blurb at the player, then remove the box until otherwise told
     }
 
     private void ResumeDialogueTree()
     {
-
+        //Send a ping to the other script that tells it to resume the dialouge from where it left off.
     }
 }
