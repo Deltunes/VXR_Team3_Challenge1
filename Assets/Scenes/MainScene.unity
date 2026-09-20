@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70d0b2b87c1cf47910692ffdd489d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceshipTakeoff
-  startDelay: 2
+  startDelay: 7
   hoverHeight: 3
   riseSpeed: 2
   forwardSpeed: 30
@@ -1262,8 +1262,8 @@ Transform:
   m_GameObject: {fileID: 587170780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.164, y: 0.953, z: 9.642}
-  m_LocalScale: {x: 1.7914, y: 2.1698205, z: 1}
+  m_LocalPosition: {x: 3.799, y: 0.953, z: 8.187}
+  m_LocalScale: {x: 2.3, y: 2.1698205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2361,8 +2361,8 @@ Transform:
   m_GameObject: {fileID: 1074571504}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.164, y: 0.953, z: 10.94}
-  m_LocalScale: {x: 1.7914, y: 2.1698205, z: 1}
+  m_LocalPosition: {x: 3.794, y: 0.953, z: 11.04}
+  m_LocalScale: {x: 2.3, y: 2.1698205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5981,7 +5981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70d0b2b87c1cf47910692ffdd489d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceshipTakeoff
-  startDelay: 4
+  startDelay: 14
   hoverHeight: 3
   riseSpeed: 2
   forwardSpeed: 30

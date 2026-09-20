@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class SpaceshipTakeoff : MonoBehaviour
 {
+    public bool PlyrHasLeft = false;     // Meant to be altered by other objects/scripts
     [Header("Delay")]
     public float startDelay = 0f;          // Wait time before this specific ship starts moving
 
@@ -23,9 +24,12 @@ public class SpaceshipTakeoff : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Start()
+    private void Update()
     {
-        StartTakeoff();
+        if (PlyrHasLeft == true)
+        {
+            StartTakeoff();
+        }
     }
 
     public void StartTakeoff()
@@ -35,6 +39,8 @@ public class SpaceshipTakeoff : MonoBehaviour
 
     private IEnumerator TakeoffRoutine()
     {
+
+        
         // Wait for the specified delay before doing anything
         if (startDelay > 0f)
         {
