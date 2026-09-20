@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70d0b2b87c1cf47910692ffdd489d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceshipTakeoff
+  PlyrHasLeft: 0
   startDelay: 0
   hoverHeight: 3
   riseSpeed: 1
@@ -528,6 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70d0b2b87c1cf47910692ffdd489d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceshipTakeoff
+  PlyrHasLeft: 0
   startDelay: 7
   hoverHeight: 3
   riseSpeed: 2
@@ -5981,6 +5983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba70d0b2b87c1cf47910692ffdd489d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpaceshipTakeoff
+  PlyrHasLeft: 0
   startDelay: 14
   hoverHeight: 3
   riseSpeed: 2
@@ -6095,6 +6098,7 @@ GameObject:
   - component: {fileID: 1512873117}
   - component: {fileID: 1512873119}
   - component: {fileID: 1512873118}
+  - component: {fileID: 1512873120}
   m_Layer: 0
   m_Name: StartShipAnimation
   m_TagString: Untagged
@@ -6111,7 +6115,7 @@ Transform:
   m_GameObject: {fileID: 1512873116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.164, y: 0.953, z: 13.014}
+  m_LocalPosition: {x: 3.347, y: 0.953, z: 12.897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6151,6 +6155,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.673645, y: 2.047197, z: 1.7760487}
   m_Center: {x: 0.032724857, y: 0.009349942, z: -0.4721737}
+--- !u!114 &1512873120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512873116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb1635e1c01e944f91dc172d7b9a742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShipsMoveOnExit
+  referencescript1: {fileID: 162829676}
+  referencescript2: {fileID: 206319630}
+  referencescript3: {fileID: 1481717089}
 --- !u!1001 &1517405968
 PrefabInstance:
   m_ObjectHideFlags: 0
