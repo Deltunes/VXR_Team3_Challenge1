@@ -8,7 +8,6 @@ public class ShipAnimOnTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            print("Ship play");
             anim.Play("BigShipArrive", 0);
         }
     }
