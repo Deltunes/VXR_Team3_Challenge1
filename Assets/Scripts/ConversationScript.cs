@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class ConversationScript : MonoBehaviour
 {
+    //test 
     private bool PlayerPresent = false;
     private bool PlayerUnseen = true;
     private bool interrupted = false;
 
+    private TextBoxScript tbs;
     private int dialoguecount = 0;
 
     private void OnTriggerEnter(Collider other)
