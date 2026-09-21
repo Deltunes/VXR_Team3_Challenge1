@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class SpaceshipTakeoff : MonoBehaviour
 {
+    private AudioSource ssource;
+    public AudioClip sound;
     public bool PlyrHasLeft = false;     // Meant to be altered by other objects/scripts
     private bool shipsstillhere = true;
     [Header("Delay")]
@@ -23,6 +25,8 @@ public class SpaceshipTakeoff : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        ssource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -67,7 +71,12 @@ public class SpaceshipTakeoff : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.4f); // Brief hover pause
+        // after hover pause, play the sound
 
+        if (sound != null && ssource != null)
+        {
+            ssource.PlayOneShot(sound);
+        }
         // Phase 2: Fly far away while turning and banking
         elapsed = 0f;
         Quaternion startRotation = transform.rotation;
