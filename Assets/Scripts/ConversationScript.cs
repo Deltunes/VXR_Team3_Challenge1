@@ -30,15 +30,17 @@ public class ConversationScript : MonoBehaviour
         if (PlayerPresent == false && interrupted == false && PlayerUnseen == false)
         {
             InterruptDialogueTree();
+            interrupted = true;
         }
-        if (PlayerPresent == true && PlayerUnseen == true)
+        else if (PlayerPresent == true && PlayerUnseen == true)
         {
             StartDialogueTree();
             PlayerUnseen = false;
         }
-        if (interrupted == true && PlayerPresent == true)
+        else if (interrupted == true && PlayerPresent == true)
         {
             ResumeDialogueTree();
+            interrupted = false;
         }
     }
 
@@ -52,13 +54,17 @@ public class ConversationScript : MonoBehaviour
 
     private void InterruptDialogueTree()
     {
+        tbs.IsSpeaking = false;
         tbs.wasInterrupted = true;
+        dialoguecount -= 1;
         tbs.nexttext = interruptionblurb();
     }
 
     private void ResumeDialogueTree()
     {
-        //Send a ping to the other script that tells it to resume the dialouge from where it left off.
+        tbs.IsSpeaking = true;
+        tbs.wasInterrupted = false;
+        tbs.nexttext = Getnexttext();
     }
 
     private string Getnexttext()
@@ -97,7 +103,7 @@ public class ConversationScript : MonoBehaviour
         switch (interruptioncount)
         {
             case 1:
-                return "Wow, man. come on...";
+                return "Wow, man. come on, don't walk away from me like that.";
             case 2:
                 return "Don't mess with me man.";
             case 3:
