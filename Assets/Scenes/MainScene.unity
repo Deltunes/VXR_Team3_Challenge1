@@ -350,7 +350,6 @@ MonoBehaviour:
   conscrip: {fileID: 670938866}
   otherbox: {fileID: 1006561615}
   textbox: {fileID: 670938867}
-  plyrthinking: 0
   responsenum: 0
 --- !u!1001 &162829668
 PrefabInstance:
@@ -698,7 +697,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 188870720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1006561615}
+        m_TargetAssemblyTypeName: OptionBox, Assembly-CSharp
+        m_MethodName: OptionSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OptionSelect()
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80505038}
+        m_TargetAssemblyTypeName: OptionBox, Assembly-CSharp
+        m_MethodName: OptionNotSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &188870720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2491,6 +2514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363d5a90ea3ff3648931ace92baed1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConversationScript
+  nextbox: 0
   tbs: {fileID: 670938867}
   dialoguecount: 0
   dialoguealtcount: 0
@@ -4042,7 +4066,6 @@ MonoBehaviour:
   conscrip: {fileID: 670938866}
   otherbox: {fileID: 80505038}
   textbox: {fileID: 670938867}
-  plyrthinking: 0
   responsenum: 0
 --- !u!114 &1006561616
 MonoBehaviour:
@@ -4781,7 +4804,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1105936023}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 80505038}
+        m_TargetAssemblyTypeName: OptionBox, Assembly-CSharp
+        m_MethodName: OptionSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OptionSelect()
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1006561615}
+        m_TargetAssemblyTypeName: OptionBox, Assembly-CSharp
+        m_MethodName: OptionNotSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1105936023
 MonoBehaviour:
   m_ObjectHideFlags: 0

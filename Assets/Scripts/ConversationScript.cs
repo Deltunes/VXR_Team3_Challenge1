@@ -7,6 +7,7 @@ public class ConversationScript : MonoBehaviour
     private bool PlayerPresent = false;
     private bool PlayerUnseen = true;
     private bool interrupted = false;
+    public bool nextbox = false;
 
     [SerializeField] private TextBoxScript tbs;
     public int dialoguecount = 0;
@@ -35,7 +36,7 @@ public class ConversationScript : MonoBehaviour
             StartDialogueTree();
             PlayerUnseen = false;
         }
-        else if (PlayerPresent == true && !tbs.IsWaiting)
+        else if (PlayerPresent == true && (!tbs.IsWaiting || nextbox))
         {
             ResumeDialogueTree();
         }
@@ -46,12 +47,15 @@ public class ConversationScript : MonoBehaviour
         //play audio to get player's attention, preferably sourced from the alien
         tbs.nexttext = Getnexttext();
         tbs.IsSpeaking = true;
+        tbs.IsWaiting = false;
+        nextbox = false;
     }
 
     private void InterruptDialogueTree()
     {
         tbs.IsSpeaking = false;
         tbs.wasInterrupted = true;
+        tbs.IsWaiting = false;
         dialoguecount -= 1;
         tbs.nexttext = interruptionblurb();
     }
@@ -60,6 +64,8 @@ public class ConversationScript : MonoBehaviour
     {
         tbs.nexttext = Getnexttext();
         tbs.IsSpeaking = true;
+        tbs.IsWaiting = false;
+        nextbox = false;
     }
 
     private string Getnexttext()

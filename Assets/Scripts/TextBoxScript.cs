@@ -32,8 +32,6 @@ public class TextBoxScript : MonoBehaviour
             if (Dbackground.GetComponent<Animator>().GetBool("DiaOpened") == false) { Dbackground.GetComponent<Animator>().SetBool("DiaOpened", true); }
             DText.text = nexttext;
             IsWaiting = true;
-            Button.plyrthinking = true;
-            Button2.plyrthinking = true;
         }
         else if (wasInterrupted == true && !IsAnnoyed)
         {
@@ -47,8 +45,6 @@ public class TextBoxScript : MonoBehaviour
             DText.text = nexttext;
             wasInterrupted = false;
             IsAnnoyed = false;
-            Button.plyrthinking = true;
-            Button2.plyrthinking = true;
         }
     }
 

@@ -9,27 +9,22 @@ public class OptionBox : MonoBehaviour
     [SerializeField] private OptionBox otherbox;
     [SerializeField] private TextBoxScript textbox;
 
-    public bool plyrthinking = false;
     public int responsenum = 0;
 
     private void Start()
     {
         bttxt.text = "";
+        bttxt.text = GetNextTXT();
     }
 
     private void Update()
     {
-        if (responsenum == -1)
-        {return;}
-        if (plyrthinking)
-        {
-            plyrthinking = false;
-            bttxt.text = GetNextTXT();
-        }
+        
     }
 
     private string GetNextTXT()
     {
+        if (responsenum == -1) { return ""; }
         responsenum += 1;
         switch (responsenum)
         {
@@ -48,7 +43,19 @@ public class OptionBox : MonoBehaviour
 
     public void OptionSelect()
     {
-        if (IsRudeAnswer) { responsenum = -1; otherbox.responsenum = -1;  conscrip.dialoguealtcount = 1; textbox.IsWaiting = false; }
-        else { textbox.IsWaiting = false;}
+        if (IsRudeAnswer) { responsenum = -1;  conscrip.dialoguealtcount = 1; conscrip.nextbox=true;
+            bttxt.text = GetNextTXT();
+        }
+        else { conscrip.nextbox=true; bttxt.text = GetNextTXT(); }
+    }
+
+    public void OptionNotSelect()
+    {
+        if (!IsRudeAnswer)
+        {
+            responsenum = -1;
+            bttxt.text = GetNextTXT();
+        }
+        else { bttxt.text = GetNextTXT(); }
     }
 }
