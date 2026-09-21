@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TextBoxScript : MonoBehaviour
 {
-    [SerializeField] private TextMeshPro DText;
+    [SerializeField] private TextMeshProUGUI DText;
     [SerializeField] private GameObject Dbackground;
     [SerializeField] private OptionBox Button;
 
