@@ -29,14 +29,14 @@ public class OptionBox : MonoBehaviour
         switch (responsenum)
         {
             case 1:
-                if (IsRudeAnswer) { return "Evil option 1"; }
-                else { return "Nice option 1"; }
+                if (IsRudeAnswer) { return "You don't get it because you're a BUM!!"; }
+                else { return "...Uh, what are you holding?"; }
             case 2:
-                if (IsRudeAnswer) { return "Evil Option 2"; }
-                else { return "Nice option 2"; }
+                if (IsRudeAnswer) { return "Never have. I'd like to keep my lungs, thank you."; }
+                else { return "Dude, i meant like, how are they working out here?"; }
             case 3:
-                if (IsRudeAnswer) { return "Evil Option 3"; }
-                else { return "Nice option 3"; }
+                if (IsRudeAnswer) { return "...No thanks, dude."; }
+                else { return "Y'know what, sure man. Why not."; }
         }
         return "";
     }
