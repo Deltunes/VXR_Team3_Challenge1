@@ -1984,6 +1984,7 @@ MonoBehaviour:
   DText: {fileID: 0}
   Dbackground: {fileID: 1283146513}
   IsSpeaking: 0
+  IsWaiting: 0
   wasInterrupted: 0
   doneSpeaking: 0
   nexttext: 
@@ -8233,7 +8234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53104f0ba17145b47806fc8200551081, type: 2}
+  - {fileID: 2100000, guid: 10447477d54f0cb44b9c66b06b6c5b7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
