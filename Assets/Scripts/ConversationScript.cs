@@ -88,7 +88,7 @@ public class ConversationScript : MonoBehaviour
                 return "They're uh... they're cigarrettes. \n...Have you not seen a cigarrette before...???";
             case 2:
                 dialoguecount += 1;
-                return "Oh, that's why... dunno how you missed it, but they got stuff from MAR-16070 that \"burns\" without needing air. Kinda cool, actually. Want one?";
+                return "Oh, that's what you meant... dunno how you missed it, but they got stuff from MAR-16070 that \"burns\" without needing air. Kinda cool, actually. Want one?";
             case 3:
                 dialoguecount = -1;
                 return "Hell yeah, dude. Why don't you watch the ships with me for a bit while you're at it? I think a feel a big one coming in now... look up there!";
