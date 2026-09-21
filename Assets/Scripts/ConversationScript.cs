@@ -27,29 +27,27 @@ public class ConversationScript : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerPresent == false && interrupted == false && PlayerUnseen == false)
+        if (dialoguecount == -1) { return; }
+        else if (PlayerPresent == false && interrupted == false && PlayerUnseen == false)
         {
             InterruptDialogueTree();
-            interrupted = true;
         }
-        else if (PlayerPresent == true && PlayerUnseen == true)
+        else if (PlayerPresent == true && PlayerUnseen == true && !tbs.IsWaiting)
         {
             StartDialogueTree();
             PlayerUnseen = false;
         }
-        else if (interrupted == true && PlayerPresent == true)
+        else if (PlayerPresent == true && !tbs.IsWaiting)
         {
             ResumeDialogueTree();
-            interrupted = false;
         }
     }
 
     private void StartDialogueTree()
     {
         //play audio to get player's attention, preferably sourced from the alien
-
-        tbs.IsSpeaking = true;
         tbs.nexttext = Getnexttext();
+        tbs.IsSpeaking = true;
     }
 
     private void InterruptDialogueTree()
@@ -62,9 +60,8 @@ public class ConversationScript : MonoBehaviour
 
     private void ResumeDialogueTree()
     {
-        tbs.IsSpeaking = true;
-        tbs.wasInterrupted = false;
         tbs.nexttext = Getnexttext();
+        tbs.IsSpeaking = true;
     }
 
     private string Getnexttext()
@@ -99,7 +96,7 @@ public class ConversationScript : MonoBehaviour
     private string interruptionblurb()
     {
         interruptioncount += 1;
-        if (interruptioncount >= 3) { interruptioncount = 1; }
+        if (interruptioncount >= 4) { interruptioncount = 1; }
         switch (interruptioncount)
         {
             case 1:
