@@ -35,8 +35,6 @@ public class TextBoxScript : MonoBehaviour
         }
         else if (wasInterrupted == true && !IsAnnoyed)
         {
-            //tell button to poof
-
             DText.text = nexttext;
             IsAnnoyed = true;
         }

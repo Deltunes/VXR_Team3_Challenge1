@@ -4,7 +4,6 @@ using UnityEngine;
 public class ConversationScript : MonoBehaviour
 {
     //test 
-    private bool PlayerPresent = false;
     private bool PlayerUnseen = true;
     private bool interrupted = false;
     public bool nextbox = false;
@@ -16,31 +15,26 @@ public class ConversationScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) { PlayerPresent = true; }
+        if (dialoguecount == -1) { return; }
+        else if (PlayerUnseen)
+        {
+            PlayerUnseen = false;
+            StartDialogueTree();
+        }
+        else if (interrupted)
+        {
+            interrupted = false;
+            ResumeDialogueTree();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) { PlayerPresent = false; }
+        interrupted = true;
+        InterruptDialogueTree();
     }
 
-    private void Update()
-    {
-        if (dialoguecount == -1) { return; }
-        else if (PlayerPresent == false && interrupted == false && PlayerUnseen == false)
-        {
-            InterruptDialogueTree();
-        }
-        else if (PlayerPresent == true && PlayerUnseen == true && !tbs.IsWaiting)
-        {
-            StartDialogueTree();
-            PlayerUnseen = false;
-        }
-        else if (PlayerPresent == true && (!tbs.IsWaiting || nextbox))
-        {
-            ResumeDialogueTree();
-        }
-    }
+
 
     private void StartDialogueTree()
     {
@@ -60,7 +54,7 @@ public class ConversationScript : MonoBehaviour
         tbs.nexttext = interruptionblurb();
     }
 
-    private void ResumeDialogueTree()
+    public void ResumeDialogueTree()
     {
         tbs.nexttext = Getnexttext();
         tbs.IsSpeaking = true;

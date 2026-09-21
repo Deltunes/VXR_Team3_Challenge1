@@ -1,8 +1,10 @@
 using TMPro;
+using UnityEditor.UI;
 using UnityEngine;
 
 public class OptionBox : MonoBehaviour
 {
+    [SerializeField] private Diagboxks ks;
     [SerializeField] private bool IsRudeAnswer; //Chosen in the editor instead so this can be used for both
     [SerializeField] private TextMeshProUGUI bttxt;
     [SerializeField] private ConversationScript conscrip;
@@ -24,7 +26,7 @@ public class OptionBox : MonoBehaviour
 
     private string GetNextTXT()
     {
-        if (responsenum == -1) { return ""; }
+        if (responsenum == -1 || responsenum == 3) { ks.shouldexplode = true ; Destroy(gameObject) ; return ""; }
         responsenum += 1;
         switch (responsenum)
         {
