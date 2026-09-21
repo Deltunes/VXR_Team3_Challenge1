@@ -1,13 +1,10 @@
 using TMPro;
-using Unity.AppUI.UI;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem.Composites;
 
 public class OptionBox : MonoBehaviour
 {
     [SerializeField] private bool IsRudeAnswer; //Chosen in the editor instead so this can be used for both
-    [SerializeField] private TextMeshPro bttxt;
+    [SerializeField] private TextMeshProUGUI bttxt;
     [SerializeField] private ConversationScript conscrip;
     [SerializeField] private OptionBox otherbox;
     [SerializeField] private TextBoxScript textbox;
