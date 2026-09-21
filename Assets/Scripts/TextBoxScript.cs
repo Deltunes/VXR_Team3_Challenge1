@@ -6,7 +6,7 @@ public class TextBoxScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI DText;
     [SerializeField] private GameObject Dbackground;
     [SerializeField] private OptionBox Button;
-
+    [SerializeField] private OptionBox Button2;
     [Header("Do not Alter")]
 
     public bool IsSpeaking = false; // Is The box still doing its thing?
@@ -33,6 +33,7 @@ public class TextBoxScript : MonoBehaviour
             DText.text = nexttext;
             IsWaiting = true;
             Button.plyrthinking = true;
+            Button2.plyrthinking = true;
         }
         else if (wasInterrupted == true && !IsAnnoyed)
         {
@@ -47,6 +48,7 @@ public class TextBoxScript : MonoBehaviour
             wasInterrupted = false;
             IsAnnoyed = false;
             Button.plyrthinking = true;
+            Button2.plyrthinking = true;
         }
     }
 
