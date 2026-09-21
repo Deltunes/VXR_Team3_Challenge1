@@ -27,8 +27,9 @@ public class SpaceshipTakeoff : MonoBehaviour
 
     private void Update()
     {
-        if (PlyrHasLeft == true && shipsstillhere == false)
+        if (PlyrHasLeft == true && shipsstillhere == true)
         {
+            shipsstillhere = false;
             StartTakeoff();
         }
     }
