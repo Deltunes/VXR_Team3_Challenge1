@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class OptionBox : MonoBehaviour
@@ -10,7 +9,7 @@ public class OptionBox : MonoBehaviour
     [SerializeField] private ConversationScript conscrip;
     [SerializeField] private OptionBox otherbox;
     [SerializeField] private TextBoxScript textbox;
-
+    [SerializeField] private ShipAnimOnTrigger big;
     public int responsenum = 0;
 
     private void Start()
@@ -26,7 +25,7 @@ public class OptionBox : MonoBehaviour
 
     private string GetNextTXT()
     {
-        if (responsenum == -1 || responsenum == 3) { ks.shouldexplode = true ; Destroy(gameObject) ; return ""; }
+        if (responsenum == -1 || responsenum == 3) { big.bigship = true; ks.shouldexplode = true ; Destroy(gameObject) ; return ""; }
         responsenum += 1;
         switch (responsenum)
         {

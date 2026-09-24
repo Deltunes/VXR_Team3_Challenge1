@@ -1,20 +1,27 @@
 
+
 using UnityEngine;
+using System.Collections;
 
 public class Diagboxks : MonoBehaviour
 {
-    private bool _shouldexplode = false;
+    [SerializeField] private GameObject Dbackground; [SerializeField] private GameObject dtxt;
 
-    public bool shouldexplode
+    public bool shouldexplode;
+
+    private void Update()
     {
-        get => _shouldexplode;
-        set { if (_shouldexplode = value) return;
-            _shouldexplode = value;
-            whenexploding();
+        if (shouldexplode)
+        {
+            StartCoroutine(whenexploding(4.0f));
         }
     }
-    private void whenexploding()
+            
+
+    IEnumerator whenexploding(float fuse)
     {
-        Destroy(gameObject, 8.0f);
+        yield return new WaitForSeconds(fuse);
+        Dbackground.GetComponent<Animator>().SetBool("DiaOpened", false);
+        Destroy(dtxt);
     }
 }
